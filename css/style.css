@@ -1,0 +1,198 @@
+/**
+* ! changing default style of browser
+**/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+/**
+* ! Style rules for content section
+**/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ffb6c1; 
+    width: 55%;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+.image{
+    background-image:url("/illustration.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   /* border: 2px solid black; */
+    height: 65%;
+}
+.text{
+    text-align: center;
+    color: white; 
+    font-size: 18px;
+}
+/**
+* ! style rules for form section , contains no . or / bc it is a tag, not class name
+**/
+form{
+    width: 45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  /*  max-width: 450px; */
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    padding: 50px;  
+}
+
+.title{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+ label {
+    margin-bottom: 10px;
+    margin-top: 8px;
+    display:block;
+ }
+
+button{
+    margin-top: 10px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+}
+form div input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #ffb6c1;
+    padding: 0 33px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+}
+form div{
+    position: relative;
+    margin-bottom: 20px;
+}
+input:focus{
+    border: 2px solid #f2796e;
+}
+/**
+* ! style rules for social section
+**/
+.btn{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 15px;
+}
+.btn-1, 
+.btn-2{
+    padding: 10px 5px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow:2px 2px 4px rgba(0,0,0,0.15);
+
+}
+.btn-2{
+    background-color:#ffb6c1 ;
+    color: white; 
+}
+
+
+.or{
+    text-align: center;
+}
+.question{
+    font-style: 14px;
+}
+span{
+    color: #ffb6c1; 
+    cursor: pointer;
+    
+}
+/**
+* ! style rules for form icons
+**/
+
+form div i{
+    position: absolute;
+    padding: 10px;
+    
+}
+input:focus{
+    border: 2px solid #E75480;
+}
+
+.failure-icon, .error {
+    color:red;
+}
+.success-icon{
+    color: green;
+
+}
+.error{
+    font-size: 13px;
+    margin-top: 7px;
+}
+.success-icon, .failure-icon{
+    right: 0;
+    opacity: 0;
+}
+
+/**
+* ! Style rules for button
+**/
+button{
+    margin-top: 15px;
+    width: 100%;
+    height: 46px;
+    background-color: #f36196;
+    border: 1px solid #f36196;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+button:hover{
+    opacity: 0.7;
+}
+/**
+* ! media queries are here
+**/
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+    form, 
+    .content{
+        width: 100%;
+    }
+    .btn{
+        flex-direction: column;
+    }
+    .image{
+        height: 70vh;
+    }
+    
+}
+@media (max-width: 425px){
+    form{
+        padding: 20px;
+    }
+}

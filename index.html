@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src ="https://kit.fontawesome.com/c4d01f2dc8.js" crossorigin="anonymous"></script>
+    <title>Form Assignment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="brand logo"/>
+            </div>
+            <div class="image">
+                <img src="illustration.svg" alt="image logo for container "/>
+            </div>
+            <div class="text">Start for Free & Get<br>Attractive Offers Today !</div>
+        </div>
+
+        <form id="form">
+        <div class="social"> </div>
+        <div class="title">Get Started</div>
+        <div class="question">
+            Already Have An Account? <br>
+            <span>Sign In</span>
+        </div>
+         
+        <div class="btn">
+            <div class="btn-1">
+            <img width="30" height="30" src="https://img.icons8.com/color/30/google-logo.png" alt="google-logo"
+            />
+            Sign Up
+            </div>
+            <div class="btn-2">
+            <img width="30" height="30" src="https://img.icons8.com/color/30/instagram-new--v1.png" alt="instagram-new--v1"
+            />
+            Sign Up
+            </div>
+        </div>
+        <div class="or">Or</div>
+        <div>
+            <!-- /**
+            * ! username input here
+            **/ -->
+            <label for="username">User Name:</label>
+            <i class="fa-regular fa-user"></i>
+            <input type="text" name="username" id="username" placeholder="Sarah Park" />
+            <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+            <i class="fa-solid fa-circle-check success-icon"></i>
+            <div class="error"></div>
+
+        </div>
+        <div>
+             <!-- /**
+            * ! email input here
+            **/ -->
+            <label for="email">Email:</label>
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="abcdef@gmail.com" />
+            <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+            <i class="fa-solid fa-circle-check success-icon"></i>
+            <div class="error"></div>
+       </div>
+
+        <div>
+            <!-- /**
+            * ! password input here
+            **/ -->
+            <label for="password">Password:</label>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder=" Type Password Here" />
+            <i class="fa-solid fa-circle-exclamation failure-icon"></i>
+            <i class="fa-solid fa-circle-check success-icon"></i>
+            <div class="error"></div>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+        <button id="clear" type="reset">Clear</button>
+        </form>
+    </div>
+    </body>
+    <script src="js/app.js"></script>
+</html>
